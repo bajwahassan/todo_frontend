@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="UTF-8" />
     <title>Todo list</title>
     <link rel="stylesheet" type="text/css" href="app.css" />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"/>
+
   </head>
 
   <body>
@@ -13,16 +15,22 @@
 
       <form accept-charset="UTF-8" action="http://localhost:3000/todos" method="POST" id="todo_form" autocomplete="off">
         <input type="text" name="todo[task]" value="" id="task_input" />
-        <input type="submit" value="Add Task" onclick="window.sendForm(event)" class="task_submit"/>
+        <input type="submit" value="Add Task" class="task_submit"/>
       </form>
+      <!-- <input type="submit" value="Add Task" onclick="window.sendForm(event)" class="task_submit"/> -->
 
-      <div id="container"></div>
+      <div id="container">
+        
+      </div>
     </div>
 
   </body>
 
   <footer>
     <script type="text/javascript" src="application.js"></script>
+    <script type="text/javascript" src="api.js"></script>
+    <script type="text/javascript" src="todo.js"></script>
+
   </footer>
-  
+
 </html>
